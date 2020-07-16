@@ -51,7 +51,7 @@ npm run dev
 o
 vue ui
 ```
-_Con el comando vue ui se lanza la inserfáz visual de Vue para la administración de proyectos_
+_Con el comando vue ui se lanza la inserfaz visual de Vue para la administración de proyectos_
 
 ## Autor ✒️
 
