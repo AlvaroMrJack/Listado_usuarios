@@ -1,5 +1,5 @@
 <template>
-	<v-container fluid ma-0 pa-2 mb-4 grid-list-xl white>
+	<v-container fluid ma-0 pa-2 mb-4 grid-list-xl color="#e3e3e3">
 
   		<AppBar/>
   		<v-row class="pa-4">

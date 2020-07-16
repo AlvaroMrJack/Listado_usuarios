@@ -44,14 +44,8 @@
           username: 'alvaro.12tobar@gmail.com',
           password: 'arrayan2020'
         },
-        headers: {
-          Authorization: "Bearer " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0NDAsInVzZXJuYW1lIjoiYWx2YXJvLjEydG9iYXJAZ21haWwuY29tIiwiZXhwIjoxNjAzODY2OTI2LCJlbWFpbCI6IiJ9.JmuLSUpYISswNLTzB1yfssTjXzOSf1j6LibwZxbk9NM',
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
       }).then( function( response ) {
         vue.usuarios = response.data.empleados;
-        console.log(vue.usuarios);
       }).catch( function( error ) {
         console.log('Error: ', error);
       })

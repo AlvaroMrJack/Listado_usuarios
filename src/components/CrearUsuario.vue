@@ -39,7 +39,7 @@
 		      :disabled="!valid"
 		      color="success"
 		      class="mr-4"
-		      @click="agregar"
+		      @click="register"
 		    >
 		      Agregar
 		    </v-btn>
@@ -89,26 +89,28 @@
 		          username: 'alvaro.12tobar@gmail.com',
 		          password: 'arrayan2020'
 		        },
-		        headers: {
-		          Authorization: "Bearer " + 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0NDAsInVzZXJuYW1lIjoiYWx2YXJvLjEydG9iYXJAZ21haWwuY29tIiwiZXhwIjoxNjAzODc0NTUzLCJlbWFpbCI6IiJ9.Z5alZAnyuFhnp0J292zhSzTrb0B4ZgvqgNQsWclhBUQ',
-		        },
 			}).then( function( response ) {
-				console.log(response);
+				//console.log(response);
 			}).catch( function( error ) {
 				console.log('Error: ', error);
 			});
 
 		},
 		register: function () {
+			let vue = this;
+
 	        let data = {
+	          username: 'alvaro.12tobar@gmail.com',
+              password: 'arrayan2020',
 	          nombre: vue.nombre,
 	          apellido: vue.apellido,
 	          run: vue.run,
 	        }
+
 	        this.$store.dispatch('register', data)
 	       .then(() => this.$router.push('/inicio'))
 	       .catch(err => console.log(err))
-	      }
+	    }
 	}
 };
 </script>
